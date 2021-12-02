@@ -20,6 +20,50 @@ void centerMission()
 // This does the missions on the south wall.  (Door Deliver, Package Drop off)
 void southWallMission()
 {
+	// Reset the gyroscoe and wait 100ms to settle
+	resetGyro(gyro);
+	sleep(200);
+	
+	driveStraightGyroDistance(10,32,0,false);
+	
+	centerTurnUsingGyro(10,45,false);
+	
+	driveStraightGyroDistance(10,6,0,false);
+	
+	centerTurnUsingGyro(10,-45,false);
+	
+	driveStraightGyroDistance(10,12,0,false);
+	
+	centerTurnUsingGyro(10,45,false);
+	
+	driveStraightGyroDistance(10,3,0,false);
+	
+	centerTurnUsingGyro(10,-45,false);
+		
+	moveLeftAttachmentMotorDegrees(10,-200,false);
+	
+	driveStraightGyroDistance(10,-3,0,false);
+	
+	centerTurnUsingGyro(10,45,false);
+	
+	driveStraightGyroDistance(10,-10,false);
+	
+	centerTurnUsingGyro(10,-45,false);
+	
+	driveStraightGyroDistance(10,-40,0,false);
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
 
 
 
@@ -147,3 +191,5 @@ void blueBoxMission()
 
 
 }
+
+	
